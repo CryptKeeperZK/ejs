@@ -1,3 +1,18 @@
+# `@cryptkeeperzk/ejs`:
+
+```
+NOTE: Since ejs.js is being used through Snark.js, which is used inside CryptKeeper ZK Browser Extension.
+We faced this error:  
+`
+Uncaught EvalError: Refused to evaluate a string as JavaScript because 'unsafe-eval' 
+is not an allowed source of script in the following Content Security Policy directive: 
+"script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' http://localhost:* http://127.0.0.1:*".
+`
+Therefore, according to this issue: https://github.com/mde/ejs/issues/468
+We forked the main ejs to adjust this line with this suggested solution: https://github.com/facebook/regenerator/issues/336#issuecomment-355832435
+
+```
+
 Embedded JavaScript templates<br/>
 [![Known Vulnerabilities](https://snyk.io/test/npm/ejs/badge.svg?style=flat)](https://snyk.io/test/npm/ejs)
 =============================

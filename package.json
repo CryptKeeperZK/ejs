@@ -1,5 +1,5 @@
 {
-  "name": "ejs",
+  "name": "@cryptkeeperzk/ejs",
   "description": "Embedded JavaScript templates",
   "keywords": [
     "template",
